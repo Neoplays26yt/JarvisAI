@@ -1,0 +1,14 @@
+{
+    "name": "test_workspace",
+    "description": "A workspace for testing the M1 feature",
+    "apps": [
+        {
+            "name": "Notepad",
+            "process_name": "notepad.exe",
+            "launch_cmd": "notepad.exe"
+        }
+    ],
+    "close_apps": [
+        "calculator.exe"
+    ]
+}

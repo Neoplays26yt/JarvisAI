@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "name": {
+      "value": "Ram Ashwath",
+      "updated": "2026-06-08"
+    },
+    "other_user_name": {
+      "value": "Akshat",
+      "updated": "2026-06-09"
+    }
+  },
+  "preferences": {
+    "favorite_ide": {
+      "value": "VS Code",
+      "updated": "2026-06-08"
+    },
+    "hobbies": {
+      "value": "Coding, AI tools, tech-related activities",
+      "updated": "2026-06-09"
+    },
+    "interests": {
+      "value": "Tech and coding",
+      "updated": "2026-06-09"
+    }
+  },
+  "projects": {
+    "jarvis_designer": {
+      "value": "Ram Ashwath",
+      "updated": "2026-06-09"
+    },
+    "jarvis_idea_manager": {
+      "value": "Akshat",
+      "updated": "2026-06-09"
+    }
+  },
+  "tasks": {},
+  "relationships": {
+    "marriage_anniversary": {
+      "value": "June 9th",
+      "updated": "2026-06-09"
+    }
+  },
+  "wishes": {},
+  "notes": {
+    "kevin_photo_location": {
+      "value": "kept in user's home",
+      "updated": "2026-06-09"
+    }
+  }
+}

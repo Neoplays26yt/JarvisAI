@@ -1,0 +1,47 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# API Keys & Secrets
+config/api_keys.json
+api_keys.json
+secrets.json
+*.key
+*.pem
+credentials.json
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Agents / Temporary Outputs
+.agents/
+assets/captures/
+assets/temp/
+logs/
+*.log
+
+# Models
+models/
+*.caffemodel
+*.prototxt
+
+# VS Code / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS
+.DS_Store
+
+# Distribution
+dist/
+build/
+*.egg-info/
