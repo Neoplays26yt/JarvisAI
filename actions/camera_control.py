@@ -4,10 +4,6 @@ import time
 def camera_control(parameters: dict, player) -> str:
     action = parameters.get("action", "")
     
-    worker = getattr(player, '_camera_worker', None)
-    if not worker:
-        return "Camera is not currently active. I need to open it first."
-
     assets_dir = Path("assets/captures")
     assets_dir.mkdir(parents=True, exist_ok=True)
     
@@ -28,6 +24,13 @@ def camera_control(parameters: dict, player) -> str:
             player.write_log("Camera: Live feed stopped")
             return "Live camera feed stopped."
         return "UI not available to hide camera."
+        
+    worker = None
+    if player and hasattr(player, '_win'):
+        worker = getattr(player._win, '_camera_worker', None)
+    
+    if not worker:
+        return "Camera is not currently active. I need to open it first."
         
     if action == "take_photo":
         filename = assets_dir / f"photo_{timestamp}.jpg"
