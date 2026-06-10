@@ -35,6 +35,7 @@ class CameraWorker(QThread):
         self.tracked_objects = {}  # tid -> {box, idx, conf, misses}
         self.next_track_id = 0
         self.max_misses = 8
+        self.ema_alpha = 0.2
         # Capture states
         self.trigger_photo = False
         self.photo_path = ""
